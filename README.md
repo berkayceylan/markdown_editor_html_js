@@ -1,2 +1,6 @@
-# markdown_editor_html_js
-Markdown Editor Html and Javascript
+# Mardown Editor
+
+Basic markdown editor with HTML and JS
+
+
+![Screen Shot](ss.png)
