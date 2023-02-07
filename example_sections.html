@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.7.0/marked.min.js" integrity="sha256-0Ed5s/n37LIeAWApZmZUhY9icm932KvYkTVdJzUBiI4=" crossorigin="anonymous"></script>
+  <title>Markdown Editor</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  
+
+  <div class="d-flex">
+    <div class=" p-3 mr-3">
+      <h3>Sections</h3>
+      <div class="nav flex-column nav-pills" id="sortable">
+        <span class="nav-link d-flex left-section-item justify-content-between" href="#">
+          <span class="item-text">Section 1 </span>
+          <button id="" class="edit-btn btn btn-info mr-2">E</button>
+          <button class="btn btn-danger delete-button">X</button>
+        </span>
+        <span class="nav-link d-flex left-section-item justify-content-between" href="#">
+          <span class="item-text">Section 2</span>
+          <button id="" class="edit-btn btn btn-info mr-2">E</button>
+          <button class="btn btn-danger delete-button">X</button>
+        </span>
+        <span class="nav-link d-flex left-section-item justify-content-between" href="#">
+          <span class="item-text">Section 3</span>
+          <button id="" class="edit-btn btn btn-info mr-2">E</button>
+          <button class="btn btn-danger delete-button">X</button>
+        </span>
+        <span class="nav-link d-flex left-section-item justify-content-between" href="#">
+          <span class="item-text">Section 4</span>
+          <button id="" class="edit-btn btn btn-info mr-2">E</button>
+          <button class="btn btn-danger delete-button">X</button>
+        </span>
+      </div>
+      <button class="btn btn-success mt-3" id="add-button">Add</button>
+    </div>
+    <div id="content-area" class="row" style="width: 80%;">
+      <div class="container-fluid">
+        <div class="row">
+          <textarea class="form-control mr-2 col-6 box" id="editable-section"
+          contenteditable rows="80" cols="100" style="resize: none;">This is the default content for section 1.</textarea>
+          <div id="non-editable-section" class="col-6 box">This is the default content for section 2.</div>
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@1.10.2/Sortable.min.js"></script>
+
+<script src="./edit_left_items.js"></script>
+<script src="./change_area.js"></script>
+
+</html>
